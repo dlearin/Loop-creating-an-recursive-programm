@@ -9,9 +9,11 @@
 <body>
     <script type="text/javascript">
 
-        let numero=Math.random();
+        let numero=parseInt(Math.random()*100);
 
         let numero1;
+
+        let numinten=0
 
         do {
 
@@ -23,14 +25,15 @@
             }
 
             if (numero1<numero) {
-                alert("error! Numero mayor que el aletorio");
+                alert("error! Numero menor que el aletorio");
             }
 
+            numinten++
 
         } while (numero1!=numero);
 
 
-        alert("Has acertado, solo te ha tomado")
+        alert("Has acertado, solo te ha tomado " + numinten +" Intentos" )
 
     // al estar bien saltaria aqui que es donde metes la alerta de que has acertado
 
